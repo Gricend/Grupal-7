@@ -1,0 +1,138 @@
+  /* Para versión móvil (Mobile First): */
+body{
+    margin: 0;
+    background-color: white;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+}   
+#logo{
+    background-image: url(../imgs/fenix.png);
+    width:100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    min-height: 200px;  
+}
+.table{
+    margin-right: 50px;
+}
+.productos{
+    border: 5px solid black;
+    border-radius: 50%;
+}
+    
+
+.header{
+    color: white;
+    background-image: url(https://static.diariofemenino.com/media/2996/sonarconfuego.jpg);
+    border-bottom: 5px solid black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.formulario1{
+    margin-bottom: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.landing-logo {
+    width: 200px;
+}
+
+.landing-header {
+    text-align: center;
+}
+
+.landing-subheader {
+    text-align: center;
+}
+
+.landing-mapa{
+    width: 300px;
+    height: 300px;
+}
+
+.landing-footer{
+    text-align: center;
+}
+
+section > p > a{
+    display:block;
+    text-align: center;
+}
+#redes-sociales {
+    display: flex;
+    flex-direction: column;
+}
+  /* Para versión escritorio o laptop: */
+    @media only screen and (min-width: 768px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    [class*="col-"] {
+    float: left;
+    }
+    .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    }
+
+    
+    section > p > a{
+        display: inline;
+    }
+
+    .landing-mapa{
+        width: 500px;
+        height: 400px
+    }
+
+    .landing-logo{
+        width: 225px;
+    }
+
+    .landing-etiqueta-formulario{
+        text-align: right;
+    }
+}
